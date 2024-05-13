@@ -1,0 +1,458 @@
+****src\smc_gen\r_bsp\board\generic_rl78_f24\hdwinit.c
+v2 
+:1709269794
+#1
+F "__DI" N I!1 T!2 ?18-2 
+T "void" KBV I!2 0x0 
+F "__EI" N I!3 T!2 ?19-2 
+F "__halt" N I!4 T!2 ?20-2 
+F "__stop" N I!5 T!2 ?21-2 
+F "__brk" N I!6 T!2 ?22-2 
+F "__nop" N I!7 T!2 ?23-2 86-1 100-1 112-1 
+F "__rolb" N I!8 T!9 ?25-2 P!10 P!11 
+T "unsigned char" KBU I!9 0x1 
+V "" N I!10 O!8 T!9 .1 0x1 
+V "" N I!11 O!8 T!9 .1 0x1 
+F "__rorb" N I!12 T!9 ?26-2 P!13 P!14 
+V "" N I!13 O!12 T!9 .1 0x1 
+V "" N I!14 O!12 T!9 .1 0x1 
+F "__rolw" N I!15 T!16 ?27-2 P!17 P!18 
+T "unsigned int" KBU I!16 0x2 
+V "" N I!17 O!15 T!16 .2 0x2 
+V "" N I!18 O!15 T!9 .1 0x1 
+F "__rorw" N I!19 T!16 ?28-2 P!20 P!21 
+V "" N I!20 O!19 T!16 .2 0x2 
+V "" N I!21 O!19 T!9 .1 0x1 
+F "__mulu" N I!22 T!16 ?30-2 P!23 P!24 
+V "" N I!23 O!22 T!9 .1 0x1 
+V "" N I!24 O!22 T!9 .1 0x1 
+F "__mului" N I!25 T!26 ?32-2 P!27 P!28 
+T "unsigned long" KBU I!26 0x4 
+V "" N I!27 O!25 T!16 .2 0x2 
+V "" N I!28 O!25 T!16 .2 0x2 
+F "__mulsi" N I!29 T!30 ?33-2 P!31 P!33 
+T "long" KBS I!30 0x4 
+V "" N I!31 O!29 T!32 .2 0x2 
+T "int" KBS I!32 0x2 
+V "" N I!33 O!29 T!32 .2 0x2 
+F "_COM_mulul" F I!34 T!35 ?42-2 P!36 P!37 
+T "unsigned long long" KBU I!35 0x8 
+V "" N I!36 O!34 T!26 .2 0x4 
+V "" N I!37 O!34 T!26 .2 0x4 
+F "_COM_mulsl" F I!38 T!39 ?43-2 P!40 P!41 
+T "long long" KBS I!39 0x8 
+V "" N I!40 O!38 T!30 .2 0x4 
+V "" N I!41 O!38 T!30 .2 0x4 
+F "_COM_divui" F I!42 T!16 ?48-2 P!43 P!44 
+V "" N I!43 O!42 T!16 .2 0x2 
+V "" N I!44 O!42 T!9 .1 0x1 
+F "_COM_divul" F I!45 T!26 ?49-2 P!46 P!47 
+V "" N I!46 O!45 T!26 .2 0x4 
+V "" N I!47 O!45 T!16 .2 0x2 
+F "_COM_remui" F I!48 T!9 ?53-2 P!49 P!50 
+V "" N I!49 O!48 T!16 .2 0x2 
+V "" N I!50 O!48 T!9 .1 0x1 
+F "_COM_remul" F I!51 T!16 ?54-2 P!52 P!53 
+V "" N I!52 O!51 T!26 .2 0x4 
+V "" N I!53 O!51 T!16 .2 0x2 
+F "_COM_macui" F I!54 T!26 ?58-2 P!55 P!56 P!57 
+V "" N I!55 O!54 T!16 .2 0x2 
+V "" N I!56 O!54 T!16 .2 0x2 
+V "" N I!57 O!54 T!26 .2 0x4 
+F "_COM_macsi" F I!58 T!30 ?59-2 P!59 P!60 P!61 
+V "" N I!59 O!58 T!32 .2 0x2 
+V "" N I!60 O!58 T!32 .2 0x2 
+V "" N I!61 O!58 T!30 .2 0x4 
+F "__get_psw" N I!62 T!9 ?63-2 
+F "__set_psw" N I!63 T!2 ?64-2 P!64 
+V "" N I!64 O!63 T!9 .1 0x1 
+F "__set1" N I!65 T!2 ?66-2 P!66 P!68 
+V "" N I!66 O!65 T!67 .2 0x2 
+T "" KP I!67 T!9 0x2 
+V "" N I!68 O!65 T!9 .1 0x1 
+F "__clr1" N I!69 T!2 ?67-2 P!70 P!71 
+V "" N I!70 O!69 T!67 .2 0x2 
+V "" N I!71 O!69 T!9 .1 0x1 
+F "__not1" N I!72 T!2 ?68-2 P!73 P!74 
+V "" N I!73 O!72 T!67 .2 0x2 
+V "" N I!74 O!72 T!9 .1 0x1 
+T "int8_t" KT I!75 T!76 !18-8 0x1 
+T "signed char" KBS I!76 0x1 
+T "int16_t" KT I!77 T!78 !19-8 0x2 
+T "short" KBS I!78 0x2 
+T "int32_t" KT I!79 T!30 !20-8 0x4 
+T "int64_t" KT I!80 T!39 !22-8 0x8 
+T "uint8_t" KT I!81 T!9 !25-8 0x1 
+T "uint16_t" KT I!82 T!83 !26-8 0x2 
+T "unsigned short" KBU I!83 0x2 
+T "uint32_t" KT I!84 T!26 !27-8 0x4 
+T "uint64_t" KT I!85 T!35 !29-8 0x8 
+T "int_least8_t" KT I!86 T!75 !32-8 0x1 
+T "int_least16_t" KT I!87 T!77 !33-8 0x2 
+T "int_least32_t" KT I!88 T!79 !34-8 0x4 
+T "int_least64_t" KT I!89 T!80 !36-8 0x8 
+T "uint_least8_t" KT I!90 T!81 !39-8 0x1 
+T "uint_least16_t" KT I!91 T!82 !40-8 0x2 
+T "uint_least32_t" KT I!92 T!84 !41-8 0x4 
+T "uint_least64_t" KT I!93 T!85 !43-8 0x8 
+T "int_fast8_t" KT I!94 T!75 !46-8 0x1 
+T "int_fast16_t" KT I!95 T!77 !47-8 0x2 
+T "int_fast32_t" KT I!96 T!79 !48-8 0x4 
+T "int_fast64_t" KT I!97 T!80 !50-8 0x8 
+T "uint_fast8_t" KT I!98 T!81 !53-8 0x1 
+T "uint_fast16_t" KT I!99 T!82 !54-8 0x2 
+T "uint_fast32_t" KT I!100 T!84 !55-8 0x4 
+T "uint_fast64_t" KT I!101 T!85 !57-8 0x8 
+T "intptr_t" KT I!102 T!79 !60-8 0x4 
+T "uintptr_t" KT I!103 T!84 !61-8 0x4 
+T "intmax_t" KT I!104 T!80 !67-8 0x8 
+T "uintmax_t" KT I!105 T!85 !68-8 0x8 
+T "ptrdiff_t" KT I!106 T!32 !18-11 0x2 
+T "size_t" KT I!107 T!16 !19-11 0x2 
+T "va_list" KT I!108 T!109 !22-12 0x2 
+T "" KP I!109 T!110 0x2 
+T "char" KBCU I!110 0x1 
+F "__builtin_va_start" N I!111 T!2 ?23-12 P!112 
+V "" N I!112 O!111 T!108 .2 0x2 
+F "printf" F I!113 T!32 ?23-10 P!114 VARARG 
+V "" TN I!114 O!113 T!115 .2 0x4 
+T "" MOD"C" KP I!115 T!110 0x4 
+F "printf_tiny" F I!116 T!32 ?24-10 P!117 VARARG 
+V "" TN I!117 O!116 T!115 .2 0x4 
+F "scanf" F I!118 T!32 ?25-10 P!119 VARARG 
+V "" TN I!119 O!118 T!115 .2 0x4 
+F "snprintf" F I!120 T!32 ?26-10 P!121 P!123 P!124 VARARG 
+V "" TN I!121 O!120 T!122 .2 0x4 
+T "" KP I!122 T!110 0x4 
+V "" N I!123 O!120 T!107 .2 0x2 
+V "" TN I!124 O!120 T!115 .2 0x4 
+F "sprintf" F I!125 T!32 ?27-10 P!126 P!127 VARARG 
+V "" TN I!126 O!125 T!122 .2 0x4 
+V "" TN I!127 O!125 T!115 .2 0x4 
+F "sprintf_tiny" F I!128 T!32 ?28-10 P!129 P!130 VARARG 
+V "" TN I!129 O!128 T!122 .2 0x4 
+V "" TN I!130 O!128 T!115 .2 0x4 
+F "sscanf" F I!131 T!32 ?29-10 P!132 P!133 VARARG 
+V "" TN I!132 O!131 T!115 .2 0x4 
+V "" TN I!133 O!131 T!115 .2 0x4 
+F "vprintf" F I!134 T!32 ?30-10 P!135 P!136 
+V "" TN I!135 O!134 T!115 .2 0x4 
+V "" N I!136 O!134 T!108 .2 0x2 
+F "vscanf" F I!137 T!32 ?31-10 P!138 P!139 
+V "" TN I!138 O!137 T!115 .2 0x4 
+V "" N I!139 O!137 T!108 .2 0x2 
+F "vsnprintf" F I!140 T!32 ?32-10 P!141 P!142 P!143 P!144 
+V "" TN I!141 O!140 T!122 .2 0x4 
+V "" N I!142 O!140 T!107 .2 0x2 
+V "" TN I!143 O!140 T!115 .2 0x4 
+V "" N I!144 O!140 T!108 .2 0x2 
+F "vsprintf" F I!145 T!32 ?33-10 P!146 P!147 P!148 
+V "" TN I!146 O!145 T!122 .2 0x4 
+V "" TN I!147 O!145 T!115 .2 0x4 
+V "" N I!148 O!145 T!108 .2 0x2 
+F "vsscanf" F I!149 T!32 ?34-10 P!150 P!151 P!152 
+V "" TN I!150 O!149 T!115 .2 0x4 
+V "" TN I!151 O!149 T!115 .2 0x4 
+V "" N I!152 O!149 T!108 .2 0x2 
+F "getchar" F I!153 T!32 ?46-10 
+F "gets" F I!154 T!109 ?47-10 P!155 
+V "" N I!155 O!154 T!109 .2 0x2 
+F "_COM_gets_f" F I!156 T!122 ?48-10 P!157 
+V "" N I!157 O!156 T!122 .2 0x4 
+F "putchar" F I!158 T!32 ?50-10 P!159 
+V "" N I!159 O!158 T!32 .2 0x2 
+F "puts" F I!160 T!32 ?51-10 P!161 
+V "" N I!161 O!160 T!162 .2 0x2 
+T "" MOD"C" KP I!162 T!110 0x2 
+F "_COM_puts_f" F I!163 T!32 ?52-10 P!164 
+V "" N I!164 O!163 T!115 .2 0x4 
+F "perror" F I!165 T!2 ?54-10 P!166 
+V "" N I!166 O!165 T!162 .2 0x2 
+F "_COM_perror_f" F I!167 T!2 ?55-10 P!168 
+V "" N I!168 O!167 T!115 .2 0x4 
+T "" KE I!169 T!110 0x1 EM0:"HIOCLK" EM1:"SYSCLK" EM2:"SXCLK" EM3:"MIOCLK" EM4:"LOCLK" EM5:"PLLCLK" 
+T "e_clock_mode_t" KT I!170 T!169 !95-7 0x1 
+T "" KE I!171 T!110 0x1 EM0:"BSP_OK" EM1:"BSP_ARG_ERROR" EM2:"BSP_ERROR1" EM3:"BSP_ERROR2" EM4:"BSP_ERROR3" 
+T "e_bsp_err_t" KT I!172 T!171 !105-7 0x1 
+T "" KE I!173 T!110 0x1 EM0:"BSP_DELAY_SECS" EM1:"BSP_DELAY_MILLISECS" EM2:"BSP_DELAY_MICROSECS" 
+T "e_bsp_delay_units_t" KT I!174 T!173 !113-7 0x1 
+F "R_BSP_GetFclkFreqHz" F I!175 T!84 ?124-7 
+T "" KS I!176 !23-16 0x4 VM!177 VM!178 
+V "quot" - I!177 O!176 T!32 !24-16 .2 0x2 BO0 BIS16 
+V "rem" - I!178 O!176 T!32 !25-16 .2 0x2 BO16 BIS16 
+T "div_t" KT I!179 T!176 !26-16 0x4 
+T "" KS I!180 !28-16 0x8 VM!181 VM!182 
+V "quot" - I!181 O!180 T!30 !29-16 .2 0x4 BO0 BIS32 
+V "rem" - I!182 O!180 T!30 !30-16 .2 0x4 BO32 BIS32 
+T "ldiv_t" KT I!183 T!180 !31-16 0x8 
+T "" KS I!184 !34-16 0x10 VM!185 VM!186 
+V "quot" - I!185 O!184 T!39 !35-16 .2 0x8 BO0 BIS64 
+V "rem" - I!186 O!184 T!39 !36-16 .2 0x8 BO64 BIS64 
+T "lldiv_t" KT I!187 T!184 !37-16 0x10 
+F "atof" F I!188 T!189 ?40-16 P!190 
+T "float" KBF I!189 0x4 
+V "" N I!190 O!188 T!162 .2 0x2 
+F "_COM_atof_f" F I!191 T!189 ?41-16 P!192 
+V "" N I!192 O!191 T!115 .2 0x4 
+F "atoff" F I!193 T!189 ?43-16 P!194 
+V "" N I!194 O!193 T!162 .2 0x2 
+F "_COM_atoff_f" F I!195 T!189 ?44-16 P!196 
+V "" N I!196 O!195 T!115 .2 0x4 
+F "atoi" F I!197 T!32 ?46-16 P!198 
+V "" N I!198 O!197 T!162 .2 0x2 
+F "_COM_atoi_f" F I!199 T!32 ?47-16 P!200 
+V "" N I!200 O!199 T!115 .2 0x4 
+F "atol" F I!201 T!30 ?49-16 P!202 
+V "" N I!202 O!201 T!162 .2 0x2 
+F "_COM_atol_f" F I!203 T!30 ?50-16 P!204 
+V "" N I!204 O!203 T!115 .2 0x4 
+F "atoll" F I!205 T!39 ?53-16 P!206 
+V "" N I!206 O!205 T!162 .2 0x2 
+F "_COM_atoll_f" F I!207 T!39 ?54-16 P!208 
+V "" N I!208 O!207 T!115 .2 0x4 
+F "strtod" F I!209 T!189 ?56-16 P!210 P!211 
+V "" TN I!210 O!209 T!162 .2 0x2 
+V "" TN I!211 O!209 T!212 .2 0x2 
+T "" KP I!212 T!109 0x2 
+F "_COM_strtod_ff" F I!213 T!189 ?57-16 P!214 P!215 
+V "" TN I!214 O!213 T!115 .2 0x4 
+V "" TN I!215 O!213 T!216 .2 0x4 
+T "" KP I!216 T!122 0x4 
+F "strtof" F I!217 T!189 ?59-16 P!218 P!219 
+V "" TN I!218 O!217 T!162 .2 0x2 
+V "" TN I!219 O!217 T!212 .2 0x2 
+F "_COM_strtof_ff" F I!220 T!189 ?60-16 P!221 P!222 
+V "" TN I!221 O!220 T!115 .2 0x4 
+V "" TN I!222 O!220 T!216 .2 0x4 
+F "strtold" F I!223 T!189 ?62-16 P!224 P!225 
+V "" TN I!224 O!223 T!162 .2 0x2 
+V "" TN I!225 O!223 T!212 .2 0x2 
+F "_COM_strtold_ff" F I!226 T!189 ?63-16 P!227 P!228 
+V "" TN I!227 O!226 T!115 .2 0x4 
+V "" TN I!228 O!226 T!216 .2 0x4 
+F "strtol" F I!229 T!30 ?65-16 P!230 P!231 P!232 
+V "" TN I!230 O!229 T!162 .2 0x2 
+V "" TN I!231 O!229 T!212 .2 0x2 
+V "" N I!232 O!229 T!32 .2 0x2 
+F "_COM_strtol_ff" F I!233 T!30 ?66-16 P!234 P!235 P!236 
+V "" TN I!234 O!233 T!115 .2 0x4 
+V "" TN I!235 O!233 T!216 .2 0x4 
+V "" N I!236 O!233 T!32 .2 0x2 
+F "strtoll" F I!237 T!39 ?68-16 P!238 P!239 P!240 
+V "" TN I!238 O!237 T!162 .2 0x2 
+V "" TN I!239 O!237 T!212 .2 0x2 
+V "" N I!240 O!237 T!32 .2 0x2 
+F "_COM_strtoll_ff" F I!241 T!39 ?69-16 P!242 P!243 P!244 
+V "" TN I!242 O!241 T!115 .2 0x4 
+V "" TN I!243 O!241 T!216 .2 0x4 
+V "" N I!244 O!241 T!32 .2 0x2 
+F "strtoul" F I!245 T!26 ?71-16 P!246 P!247 P!248 
+V "" TN I!246 O!245 T!162 .2 0x2 
+V "" TN I!247 O!245 T!212 .2 0x2 
+V "" N I!248 O!245 T!32 .2 0x2 
+F "_COM_strtoul_ff" F I!249 T!26 ?72-16 P!250 P!251 P!252 
+V "" TN I!250 O!249 T!115 .2 0x4 
+V "" TN I!251 O!249 T!216 .2 0x4 
+V "" N I!252 O!249 T!32 .2 0x2 
+F "strtoull" F I!253 T!35 ?74-16 P!254 P!255 P!256 
+V "" TN I!254 O!253 T!162 .2 0x2 
+V "" TN I!255 O!253 T!212 .2 0x2 
+V "" N I!256 O!253 T!32 .2 0x2 
+F "_COM_strtoull_ff" F I!257 T!35 ?75-16 P!258 P!259 P!260 
+V "" TN I!258 O!257 T!115 .2 0x4 
+V "" TN I!259 O!257 T!216 .2 0x4 
+V "" N I!260 O!257 T!32 .2 0x2 
+F "rand" F I!261 T!32 ?90-16 
+F "srand" F I!262 T!2 ?91-16 P!263 
+V "" N I!263 O!262 T!16 .2 0x2 
+F "calloc" F I!264 T!265 ?93-16 P!266 P!267 
+T "" KP I!265 T!2 0x2 
+V "" N I!266 O!264 T!107 .2 0x2 
+V "" N I!267 O!264 T!107 .2 0x2 
+F "free" F I!268 T!2 ?94-16 P!269 
+V "" N I!269 O!268 T!265 .2 0x2 
+F "malloc" F I!270 T!265 ?95-16 P!271 
+V "" N I!271 O!270 T!107 .2 0x2 
+F "realloc" F I!272 T!265 ?96-16 P!273 P!274 
+V "" N I!273 O!272 T!265 .2 0x2 
+V "" N I!274 O!272 T!107 .2 0x2 
+F "abort" F I!275 T!2 ?98-16 
+F "bsearch" F I!276 T!265 ?100-16 P!277 P!279 P!280 P!281 P!282 
+V "" N I!277 O!276 T!278 .2 0x2 
+T "" MOD"C" KP I!278 T!2 0x2 
+V "" N I!279 O!276 T!278 .2 0x2 
+V "" N I!280 O!276 T!107 .2 0x2 
+V "" N I!281 O!276 T!107 .2 0x2 
+V "" N I!282 O!276 T!283 .2 0x4 
+T "" KP I!283 T!284 0x4 
+T "" KF I!284 T!32 0x0 P!285 P!286 
+V "" N I!285 O!284 T!278 .2 0x2 
+V "" N I!286 O!284 T!278 .2 0x2 
+F "_COM_bsearch_f" F I!287 T!288 ?101-16 P!289 P!291 P!292 P!293 P!294 
+T "" KP I!288 T!2 0x4 
+V "" N I!289 O!287 T!290 .2 0x4 
+T "" MOD"C" KP I!290 T!2 0x4 
+V "" N I!291 O!287 T!290 .2 0x4 
+V "" N I!292 O!287 T!107 .2 0x2 
+V "" N I!293 O!287 T!107 .2 0x2 
+V "" N I!294 O!287 T!295 .2 0x4 
+T "" KP I!295 T!296 0x4 
+T "" KF I!296 T!32 0x0 P!297 P!298 
+V "" N I!297 O!296 T!290 .2 0x4 
+V "" N I!298 O!296 T!290 .2 0x4 
+F "qsort" F I!299 T!2 ?103-16 P!300 P!301 P!302 P!303 
+V "" N I!300 O!299 T!265 .2 0x2 
+V "" N I!301 O!299 T!107 .2 0x2 
+V "" N I!302 O!299 T!107 .2 0x2 
+V "" N I!303 O!299 T!304 .2 0x4 
+T "" KP I!304 T!305 0x4 
+T "" KF I!305 T!32 0x0 P!306 P!307 
+V "" N I!306 O!305 T!278 .2 0x2 
+V "" N I!307 O!305 T!278 .2 0x2 
+F "_COM_qsort_f" F I!308 T!2 ?104-16 P!309 P!310 P!311 P!312 
+V "" N I!309 O!308 T!288 .2 0x4 
+V "" N I!310 O!308 T!107 .2 0x2 
+V "" N I!311 O!308 T!107 .2 0x2 
+V "" N I!312 O!308 T!313 .2 0x4 
+T "" KP I!313 T!314 0x4 
+T "" KF I!314 T!32 0x0 P!315 P!316 
+V "" N I!315 O!314 T!290 .2 0x4 
+V "" N I!316 O!314 T!290 .2 0x4 
+F "abs" F I!317 T!32 ?107-16 P!318 
+V "" N I!318 O!317 T!32 .2 0x2 
+F "labs" F I!319 T!30 ?108-16 P!320 
+V "" N I!320 O!319 T!30 .2 0x4 
+F "llabs" F I!321 T!39 ?109-16 P!322 
+V "" N I!322 O!321 T!39 .2 0x8 
+F "div" F I!323 T!179 ?110-16 P!324 P!325 
+V "" N I!324 O!323 T!32 .2 0x2 
+V "" N I!325 O!323 T!32 .2 0x2 
+F "ldiv" F I!326 T!183 ?111-16 P!327 P!328 
+V "" N I!327 O!326 T!30 .2 0x4 
+V "" N I!328 O!326 T!30 .2 0x4 
+F "lldiv" F I!329 T!187 ?112-16 P!330 P!331 
+V "" N I!330 O!329 T!39 .2 0x8 
+V "" N I!331 O!329 T!39 .2 0x8 
+T "e_fsp_err" KE I!332 T!78 !97-14 0x2 EM0:"FSP_SUCCESS" EM1:"FSP_ERR_ASSERTION" EM2:"FSP_ERR_INVALID_POINTER" EM3:"FSP_ERR_INVALID_ARGUMENT" EM4:"FSP_ERR_INVALID_CHANNEL" EM5:"FSP_ERR_INVALID_MODE" EM6:"FSP_ERR_UNSUPPORTED" EM7:"FSP_ERR_NOT_OPEN" EM8:"FSP_ERR_IN_USE" EM9:"FSP_ERR_OUT_OF_MEMORY" EM10:"FSP_ERR_HW_LOCKED" EM11:"FSP_ERR_IRQ_BSP_DISABLED" EM12:"FSP_ERR_OVERFLOW" EM13:"FSP_ERR_UNDERFLOW" EM14:"FSP_ERR_ALREADY_OPEN" EM15:"FSP_ERR_APPROXIMATION" EM16:"FSP_ERR_CLAMPED" EM17:"FSP_ERR_INVALID_RATE" EM18:"FSP_ERR_ABORTED" EM19:"FSP_ERR_NOT_ENABLED" EM20:"FSP_ERR_TIMEOUT" EM21:"FSP_ERR_INVALID_BLOCKS" EM22:"FSP_ERR_INVALID_ADDRESS" EM23:"FSP_ERR_INVALID_SIZE" EM24:"FSP_ERR_WRITE_FAILED" EM25:"FSP_ERR_ERASE_FAILED" EM26:"FSP_ERR_INVALID_CALL" EM27:"FSP_ERR_INVALID_HW_CONDITION" EM28:"FSP_ERR_INVALID_FACTORY_FLASH" EM30:"FSP_ERR_INVALID_STATE" EM31:"FSP_ERR_NOT_ERASED" EM32:"FSP_ERR_SECTOR_RELEASE_FAILED" EM33:"FSP_ERR_NOT_INITIALIZED" EM34:"FSP_ERR_NOT_FOUND" EM35:"FSP_ERR_NO_CALLBACK_MEMORY" EM36:"FSP_ERR_BUFFER_EMPTY" EM100:"FSP_ERR_INTERNAL" EM101:"FSP_ERR_WAIT_ABORTED" EM102:"FSP_ERR_SENSOR_INVALID_DATA" EM103:"FSP_ERR_SENSOR_IN_STABILIZATION" EM104:"FSP_ERR_SENSOR_MEASUREMENT_NOT_FINISHED" EM6000:"FSP_ERR_CTSU_SCANNING" EM6001:"FSP_ERR_CTSU_NOT_GET_DATA" EM6002:"FSP_ERR_CTSU_INCOMPLETE_TUNING" EM6003:"FSP_ERR_CTSU_DIAG_NOT_YET" EM6004:"FSP_ERR_CTSU_DIAG_LDO_OVER_VOLTAGE" EM6005:"FSP_ERR_CTSU_DIAG_CCO_HIGH" EM6006:"FSP_ERR_CTSU_DIAG_CCO_LOW" EM6007:"FSP_ERR_CTSU_DIAG_SSCG" EM6008:"FSP_ERR_CTSU_DIAG_DAC" EM6009:"FSP_ERR_CTSU_DIAG_OUTPUT_VOLTAGE" EM6010:"FSP_ERR_CTSU_DIAG_OVER_VOLTAGE" EM6011:"FSP_ERR_CTSU_DIAG_OVER_CURRENT" EM6012:"FSP_ERR_CTSU_DIAG_LOAD_RESISTANCE" EM6013:"FSP_ERR_CTSU_DIAG_CURRENT_SOURCE" EM6014:"FSP_ERR_CTSU_DIAG_SENSCLK_GAIN" EM6015:"FSP_ERR_CTSU_DIAG_SUCLK_GAIN" EM6016:"FSP_ERR_CTSU_DIAG_CLOCK_RECOVERY" EM6017:"FSP_ERR_CTSU_DIAG_CFC_GAIN" EM6018:"FSP_ERR_COMMS_BUS_NOT_OPEN" 
+T "fsp_err_t" KT I!333 T!332 !168-14 0x2 
+T "" KS I!334 !32-18 0x1 VM!335 VM!336 VM!337 VM!338 VM!339 VM!340 VM!341 VM!342 
+V "no0" - I!335 O!334 T!9 !33-18 #82-1 .1 0x1 BO0 BIS1 
+V "no1" - I!336 O!334 T!9 !34-18 .1 0x1 BO1 BIS1 
+V "no2" - I!337 O!334 T!9 !35-18 .1 0x1 BO2 BIS1 
+V "no3" - I!338 O!334 T!9 !36-18 .1 0x1 BO3 BIS1 
+V "no4" - I!339 O!334 T!9 !37-18 .1 0x1 BO4 BIS1 
+V "no5" - I!340 O!334 T!9 !38-18 .1 0x1 BO5 BIS1 
+V "no6" - I!341 O!334 T!9 !39-18 .1 0x1 BO6 BIS1 
+V "no7" - I!342 O!334 T!9 !40-18 .1 0x1 BO7 BIS1 
+T "__bitf_T" KT I!343 T!334 !41-18 0x1 
+T "" KS I!344 !44-18 0x2 VM!345 VM!346 VM!347 VM!348 VM!349 VM!350 VM!351 VM!352 VM!353 VM!354 VM!355 VM!356 VM!357 VM!358 VM!359 VM!360 
+V "no0" - I!345 O!344 T!9 !45-18 .1 0x1 BO0 BIS1 
+V "no1" - I!346 O!344 T!9 !46-18 .1 0x1 BO1 BIS1 
+V "no2" - I!347 O!344 T!9 !47-18 .1 0x1 BO2 BIS1 
+V "no3" - I!348 O!344 T!9 !48-18 .1 0x1 BO3 BIS1 
+V "no4" - I!349 O!344 T!9 !49-18 .1 0x1 BO4 BIS1 
+V "no5" - I!350 O!344 T!9 !50-18 .1 0x1 BO5 BIS1 
+V "no6" - I!351 O!344 T!9 !51-18 .1 0x1 BO6 BIS1 
+V "no7" - I!352 O!344 T!9 !52-18 .1 0x1 BO7 BIS1 
+V "no8" - I!353 O!344 T!9 !53-18 .1 0x1 BO8 BIS1 
+V "no9" - I!354 O!344 T!9 !54-18 .1 0x1 BO9 BIS1 
+V "no10" - I!355 O!344 T!9 !55-18 .1 0x1 BO10 BIS1 
+V "no11" - I!356 O!344 T!9 !56-18 .1 0x1 BO11 BIS1 
+V "no12" - I!357 O!344 T!9 !57-18 .1 0x1 BO12 BIS1 
+V "no13" - I!358 O!344 T!9 !58-18 .1 0x1 BO13 BIS1 
+V "no14" - I!359 O!344 T!9 !59-18 .1 0x1 BO14 BIS1 
+V "no15" - I!360 O!344 T!9 !60-18 .1 0x1 BO15 BIS1 
+T "__bitf_T2" KT I!361 T!344 !61-18 0x2 
+F "get_fclk_freq_hz" F I!362 T!84 ?53-19 
+F "mcu_clock_setup" F I!363 T!2 ?60-19 
+F "hdwinit" F I!364 T!2 #63-1 !64,89-1-1 ?43-21 
+T "MD_STATUS" KT I!365 T!83 !73-22 0x2 
+F "R_Systeminit" F I!366 T!2 ?79-22 126-1 
+F "output_ports_configure" SF I!367 T!2 #97-1 !98,101-1-1 ?46-1 69-1 
+F "interrupts_configure" SF I!368 T!2 #109-1 !110,113-1-1 ?49-1 70-1 
+F "peripheral_modules_enable" SF I!369 T!2 #121-1 !122,128-1-1 ?52-1 71-1 
+V "w_count" VN I!370 O!364 T!84 !66-1 #84-1 #84-1 84-1 84-1 .2 0x4 
+****%CxSystemPath%\inc\builtin.h
+v2 
+:1709269794
+#2
+****src\smc_gen\r_bsp\platform.h
+v2 
+:1709269794
+#3
+****src\smc_gen\r_bsp\board\generic_rl78_f24\r_bsp.h
+v2 
+:1709269794
+#4
+****src\smc_gen\r_config\r_bsp_config.h
+v2 
+:1709269794
+#5
+****src\smc_gen\r_bsp\mcu\all\r_bsp_rl78_compiler.h
+v2 
+:1709269794
+#6
+****src\smc_gen\r_bsp\mcu\all\r_bsp_common.h
+v2 
+:1709269794
+#7
+****%CxSystemPath%\inc\stdint.h
+v2 
+:1709269794
+#8
+****%CxSystemPath%\inc\stdbool.h
+v2 
+:1709269794
+#9
+****%CxSystemPath%\inc\stdio.h
+v2 
+:1709269794
+#10
+****%CxSystemPath%\inc\stddef.h
+v2 
+:1709269794
+#11
+****%CxSystemPath%\inc\stdarg.h
+v2 
+:1709269794
+#12
+****src\smc_gen\r_bsp\mcu\all\r_rtos.h
+v2 
+:1709269794
+#13
+****src\smc_gen\r_bsp\mcu\all\fsp_common_api.h
+v2 
+:1709269794
+#14
+****%CxSystemPath%\inc\assert.h
+v2 
+:1709269794
+#15
+****%CxSystemPath%\inc\stdlib.h
+v2 
+:1709269794
+#16
+****src\smc_gen\r_bsp\mcu\all\r_fsp_error.h
+v2 
+:1709269794
+#17
+****src\smc_gen\r_bsp\mcu\rl78_f24\register_access\ccrl\iodefine.h
+v2 
+:1709269794
+#18
+****src\smc_gen\r_bsp\mcu\rl78_f24\mcu_clocks.h
+v2 
+:1709269794
+#19
+****src\smc_gen\r_bsp\mcu\rl78_f24\mcu_info.h
+v2 
+:1709269794
+#20
+****src\smc_gen\r_bsp\board\generic_rl78_f24\hdwinit.h
+v2 
+:1709269794
+#21
+****src\smc_gen\general\r_cg_macrodriver.h
+v2 
+:1709269794
+#22
