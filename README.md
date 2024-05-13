@@ -7,7 +7,7 @@ udpate @ 2024/05/13
 
 - use P12 (TAU1_0) , to generate 10K freq , and change duty by terminal , 
 
---press digit:a/A(increase duty) , d/D(decrease duty)
+-- press digit:a/A(increase duty) , d/D(decrease duty)
 
 -- change duty with step : 0.1 %
 

@@ -99,6 +99,16 @@
           <Path>src\smc_gen\Config_INTC\Config_INTC.h</Path>
           <Path>src\smc_gen\Config_INTC\Config_INTC_user.c</Path>
         </Category>
+        <Category Name="Config_TAU0_0">
+          <Path>src\smc_gen\Config_TAU0_0\Config_TAU0_0.c</Path>
+          <Path>src\smc_gen\Config_TAU0_0\Config_TAU0_0.h</Path>
+          <Path>src\smc_gen\Config_TAU0_0\Config_TAU0_0_user.c</Path>
+        </Category>
+        <Category Name="Config_TAU1_0">
+          <Path>src\smc_gen\Config_TAU1_0\Config_TAU1_0.c</Path>
+          <Path>src\smc_gen\Config_TAU1_0\Config_TAU1_0.h</Path>
+          <Path>src\smc_gen\Config_TAU1_0\Config_TAU1_0_user.c</Path>
+        </Category>
       </Category>
       <Path>custom_func.c</Path>
       <Path>misc_config.c</Path>
@@ -136,8 +146,14 @@
           <Path>DefaultBuild\r_cg_sau_common.obj</Path>
           <Path>DefaultBuild\Config_INTC.obj</Path>
           <Path>DefaultBuild\Config_INTC_user.obj</Path>
+          <Path>DefaultBuild\Config_TAU0_0.obj</Path>
+          <Path>DefaultBuild\Config_TAU0_0_user.obj</Path>
+          <Path>DefaultBuild\Config_TAU1_0.obj</Path>
+          <Path>DefaultBuild\Config_TAU1_0_user.obj</Path>
         </LinkOrder>
         <CommonOptions>
+          <IncludePathForC>src\smc_gen\Config_TAU1_0</IncludePathForC>
+          <IncludePathForC>src\smc_gen\Config_TAU0_0</IncludePathForC>
           <IncludePathForC>src\smc_gen\Config_INTC</IncludePathForC>
           <IncludePathForC>src\smc_gen\Config_UART0</IncludePathForC>
           <IncludePathForC>src\smc_gen\r_pincfg</IncludePathForC>
@@ -164,6 +180,8 @@
           <Option>-g</Option>
           <Option>-g_line</Option>
           <Option>-Onothing</Option>
+          <Option>-I src\smc_gen\Config_TAU1_0</Option>
+          <Option>-I src\smc_gen\Config_TAU0_0</Option>
           <Option>-I src\smc_gen\Config_INTC</Option>
           <Option>-I src\smc_gen\Config_UART0</Option>
           <Option>-I src\smc_gen\r_pincfg</Option>
