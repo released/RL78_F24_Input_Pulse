@@ -214,12 +214,6 @@ void PWM_Process_Adjust(void)
     int temp_duty = 0;
     unsigned int duty_hex = 0;
 
-    /*
-        duty * 16
-        --------  = target hex 
-            10
-    */
-
     if (FLAG_PROJ_PWM_DUTY_INC)
     {
         FLAG_PROJ_PWM_DUTY_INC = 0;
@@ -232,7 +226,7 @@ void PWM_Process_Adjust(void)
             _0FA0_TAU_TDR11_VALUE : 0x0028 (40) : 1 %
         */
 
-        duty_hex = (_0FA0_TAU_TDR11_VALUE / DUTY_RESOLUTION) * 1;   //5 %
+        duty_hex = (_0FA0_TAU_TDR11_VALUE / DUTY_RESOLUTION) * 1;   //0.1 %
         temp_duty = (temp_duty >= _0FA0_TAU_TDR11_VALUE) ? (_0FA0_TAU_TDR11_VALUE) : (temp_duty + duty_hex ) ;   
 
         set_TAU1_pwm_ch_duty(1,temp_duty);
@@ -247,7 +241,7 @@ void PWM_Process_Adjust(void)
 
         temp_duty = get_TAU1_pwm_ch_duty(1);
 
-        duty_hex = (_0FA0_TAU_TDR11_VALUE / DUTY_RESOLUTION) * 1;   //5 %
+        duty_hex = (_0FA0_TAU_TDR11_VALUE / DUTY_RESOLUTION) * 1;   //0.1 %
         temp_duty = (_0FA0_TAU_TDR11_VALUE <= 0) ? (0) : (temp_duty - duty_hex ) ;   
 
         set_TAU1_pwm_ch_duty(1,temp_duty);
