@@ -1,80 +1,12 @@
 QualityReport
-2024年5月13日 下午 03:59:57
+2024年5月13日 下午 05:37:07
 
 ------ Start build(RL78_F24_Input_Pulse, DefaultBuild) ------
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\ccrl.exe custom_func.c -cpu=S3 -o DefaultBuild\custom_func.obj "-dev=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR7F124FPJ.DVF" -g -g_line -Onothing -I src\smc_gen\Config_TAU1_0 -I src\smc_gen\Config_TAU0_0 -I src\smc_gen\Config_INTC -I src\smc_gen\Config_UART0 -I src\smc_gen\r_pincfg -I src\smc_gen\r_config -I src\smc_gen\r_bsp\mcu\rl78_f24\register_access\ccrl -I src\smc_gen\r_bsp\mcu\rl78_f24 -I src\smc_gen\r_bsp\mcu\all -I src\smc_gen\r_bsp\board\generic_rl78_f24 -I src\smc_gen\r_bsp -I src\smc_gen\general -I src\smc_gen\Config_TAU0_1 -I src\smc_gen\Config_PORT -I .\ -lang=c99 -c -MAKEUD=DefaultBuild -exec_time=C:\Users\averyc\AppData\Local\Temp\CSPlusBuildTool_70f4f3115708482b9d542f204d00d7e8gf4ybefg.nb1 -msg_lang=english
-custom_func.c(352):W0520177:Variable "i" was declared but never referenced
-custom_func.c(518):W0520177:Variable "LOG1" was declared but never referenced
-C:\Program Files (x86)\Renesas Electronics\CS+\CC\CC-RL\V1.13.00\Bin\rlink.exe -MAKEUD=DefaultBuild\RL78_F24_Input_Pulse.lk.ud -subcommand=DefaultBuild\RL78_F24_Input_Pulse.clnk
-W0561017:Paid license of CC-RL V1 is not found, and the evaluation period has expired. Please consider purchasing the product.
-RAMDATA SECTION:  000000ee Byte(s)
-ROMDATA SECTION:  000005d9 Byte(s)
-PROGRAM SECTION:  00003be6 Byte(s)
-W0561017:Paid license of CC-RL V1 is not found, and the evaluation period has expired. Please consider purchasing the product.
-Renesas Optimizing Linker Completed
------- Build ended(Error:0, Warning:4)(RL78_F24_Input_Pulse, DefaultBuild) ------
-
---- CommandFile 1 ---
-DefaultBuild\RL78_F24_Input_Pulse.clnk :
--Input=DefaultBuild\f24opt.obj
--Input=DefaultBuild\main.obj
--Input=DefaultBuild\Config_PORT.obj
--Input=DefaultBuild\Config_PORT_user.obj
--Input=DefaultBuild\Config_TAU0_1.obj
--Input=DefaultBuild\Config_TAU0_1_user.obj
--Input=DefaultBuild\r_cg_systeminit.obj
--Input=DefaultBuild\r_cg_tau_common.obj
--Input=DefaultBuild\hdwinit.obj
--Input=DefaultBuild\r_bsp_init.obj
--Input=DefaultBuild\stkinit.obj
--Input=DefaultBuild\cstart.obj
--Input=DefaultBuild\r_bsp_common.obj
--Input=DefaultBuild\r_bsp_common_ccrl.obj
--Input=DefaultBuild\mcu_clocks.obj
--Input=DefaultBuild\Pin.obj
--Input=DefaultBuild\custom_func.obj
--Input=DefaultBuild\misc_config.obj
--Input=DefaultBuild\Config_UART0.obj
--Input=DefaultBuild\Config_UART0_user.obj
--Input=DefaultBuild\r_cg_sau_common.obj
--Input=DefaultBuild\Config_INTC.obj
--Input=DefaultBuild\Config_INTC_user.obj
--Input=DefaultBuild\Config_TAU0_0.obj
--Input=DefaultBuild\Config_TAU0_0_user.obj
--Input=DefaultBuild\Config_TAU1_0.obj
--Input=DefaultBuild\Config_TAU1_0_user.obj
--SECURITY_ID=00000000000000000000000000000000
--FLASH_SECURITY_ID=FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
--DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR7F124FPJ.DVF
--DEBug
--NOCOmpress
--NOOPtimize
--OUtput=DefaultBuild\RL78_F24_Input_Pulse.abs
--OCDBG=A5
--SECURITY_OPT_BYTE=FE
--DEBUG_MONITOR=3FE00-3FFFF
--USER_OPT_BYTE=EFE3E8
--OCDTR
--LISt=DefaultBuild\RL78_F24_Input_Pulse.map
--AUTO_SECTION_LAYOUT
--ROm=.data=.dataR
--ROm=.sdata=.sdataR
--NOMessage
--MEMory=High
--Total_size
--NOLOgo
--LIBrary=DefaultBuild\RL78_F24_Input_Pulse.lib
--end
--Input=DefaultBuild\RL78_F24_Input_Pulse.abs
--DEVICE=C:\Program Files (x86)\Renesas Electronics\CS+\CC\Device\RL78\Devicefile\DR7F124FPJ.DVF
--OUtput=DefaultBuild\RL78_F24_Input_Pulse.mot
--FOrm=Stype
--NOMessage
--exit
+------ Build ended(Error:0, Warning:0)(RL78_F24_Input_Pulse, DefaultBuild) ------
 
 
 --- SHA1 hash value of output files ---
-D:\SourceCode\_Avery_Renesas\CS+\RL78_F24_Input_Pulse\DefaultBuild\RL78_F24_Input_Pulse.abs: efe9101dbc636f3b5aa922628c6a8085b1de0604
+D:\SourceCode\_Avery_Renesas\CS+\RL78_F24_Input_Pulse\DefaultBuild\RL78_F24_Input_Pulse.abs: b57d3e49c362a63c8df6fa939ca6a138f667e3a8
 D:\SourceCode\_Avery_Renesas\CS+\RL78_F24_Input_Pulse\DefaultBuild\RL78_F24_Input_Pulse.mot: 92ef42605e78f8032ba25dabae54d74131d45aff
 
 
@@ -103,11 +35,11 @@ D:\SourceCode\_Avery_Renesas\CS+\RL78_F24_Input_Pulse\DefaultBuild\RL78_F24_Inpu
  C:\Program Files (x86)\Renesas Electronics\CS+\CC
 *Memory Usage
  *Private Working Set
-  348 MB
+  296 MB
  *Number of GDI Objects
-  2298
+  2211
  *Number of USER Objects
-  1202
+  1133
  *Opened Files
   8 editors, 8 files, 54 KB
 
@@ -286,8 +218,6 @@ Build Tool Information
 Debug Tool Information
  *RL78 E2 Lite
   Debugger Library V8.11.00.03 [21 Nov 2023]
-  RL78 E2 Lite Executor V4.12d [18 Oct 2023]
-  E2 Lite 4100 A F/W V07.05
   
 
 Other Tool Information
