@@ -7,7 +7,6 @@
   </Placeholders>
   <Project Name="RL78_F24_Input_Pulse" Type="Application">
     <Files>
-      <Path>f24opt.asm</Path>
       <Path>main.c</Path>
       <Category Name="Smart Configurator">
         <Category Name="Config_PORT">
@@ -123,7 +122,6 @@
     <BuildOptions Name="CC-RL" Version="V1.13.00">
       <BuildMode Name="DefaultBuild" Active="True">
         <LinkOrder>
-          <Path>DefaultBuild\f24opt.obj</Path>
           <Path>DefaultBuild\main.obj</Path>
           <Path>DefaultBuild\Config_PORT.obj</Path>
           <Path>DefaultBuild\Config_PORT_user.obj</Path>
